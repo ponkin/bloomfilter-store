@@ -1,0 +1,7 @@
+redis:
+        image: redis
+
+app:
+        image: bloomfilter-store:1.0
+        links:
+          - redis
